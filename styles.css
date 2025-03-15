@@ -1,0 +1,84 @@
+body {
+    font-family: Arial;
+    background-color: #f4f4f4;
+}
+
+.general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.functions {
+    width: 50rem;
+    height: auto;
+    background-color: #4A90E2;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    justify-items: center;
+    color: white;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.rg{
+    display: flex;
+    flex-direction: row;
+    margin: .1rem;
+    width: 100%;
+    gap: 2px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    margin: .1rem;
+    gap: 1px;
+    width: 48rem;
+}
+
+.rg_button{
+    background-color: #FFC107;
+    border-color: #000000;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    color: black;
+}
+.rg_button_cd{
+    background-color: #FFC107;
+    border-color: #000000;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    color: black;
+    flex-grow: 2;  
+}
+
+
+.list_button{
+    background-color: #FFC107;
+    border-color: #000000;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 10px;
+    color: black;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 30rem;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 20px;
+}

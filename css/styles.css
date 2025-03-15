@@ -1,0 +1,14 @@
+body {
+    font-family: Arial;
+    background-color: #f4f4f4;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 30rem;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 20px;
+}

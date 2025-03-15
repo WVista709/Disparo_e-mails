@@ -3,15 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
     <title>Painel de Cadastro</title>
 </head>
+
 <body>
     <main class="general">
-        <div class="functions">    
+        <div class="functions">
+            <!--Buttons-->
             <section class="register">
                 <div class="rg">
-                    <button class="rg_button_cd">Cadastro do Cliente</button>
+                    <button type="button" class="rg_button_cd">Cadastro do Cliente</button>
                     <button class="rg_button">Cadastrar Mensagem</button>
                     <button class="rg_button">Enviar E-mail</button>
                 </div>
@@ -20,11 +24,22 @@
                     <button class="list_button">Lista de mensagem</button>
                 </div>
             </section>
-            <div class="box">
+            <div class="box"></div>
+        </div>
 
+        <!-- Create modal register -->
+        <div class="formRegister" style="display:none">
+            <div class="modal">
+                <h2>Novo Cliente</h2>
+                <form class="form">
+                    <input type="text" name="name" placeholder="nome">
+                    <input type="text" name="cnpj" placeholder="cnpj">
+                    <input type="text" name="state" placeholder="estado">
+                    <input type="text" name="email" placeholder="e-mail">
+                </form>
             </div>
         </div>
     </main>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

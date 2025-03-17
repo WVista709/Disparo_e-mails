@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/buttons.css">
-    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <link rel="st<linkylesheet" type="text/css" href="css/modal.css">
+    <link rel="stylesheet" type="text/css" href="css/list.css">
     <title>Painel de Cadastro</title>
 </head>
 
@@ -16,7 +17,7 @@
             <section class="register">
                 <div class="rg">
                     <button type="button" class="rg_button_cd">Cadastro do Cliente</button>
-                    <button class="rg_button">Cadastrar Mensagem</button>
+                    <button class="rg_button_men">Cadastrar Mensagem</button>
                     <button class="rg_button">Enviar E-mail</button>
                 </div>
                 <div class="list">
@@ -24,19 +25,42 @@
                     <button class="list_button">Lista de mensagem</button>
                 </div>
             </section>
-            <div class="box"></div>
+            <div class="box">
+                <div class="list_client" style="display:block">
+                    <table id="tableClient" class="records">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>CNPJ</th>
+                                <th>Estado</th>
+                                <th>E-mail</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
 
-        <!-- Create modal register -->
-        <div class="formRegister" style="display:none">
-            <div class="modal">
-                <h2>Novo Cliente</h2>
-                <form class="form">
+        <!-- Create modal geral -->
+        <div class="form_register" style="display:none">
+            <div class="modal" id="form_modal">
+                <button type="button" class="close_modal">X</button>
+                <h2 id="modal_title">Cadastro</h2><br><br>
+                <form class="form" id="form_content">
+                    <!--
                     <input type="text" name="name" placeholder="nome">
-                    <input type="text" name="cnpj" placeholder="cnpj">
+                    <input type="text" name="cnpj" placeholder="cnpj"><br>
                     <input type="text" name="state" placeholder="estado">
                     <input type="text" name="email" placeholder="e-mail">
+                    -->
                 </form>
+                <br><br>
+                <button type="button" class="save_modal">Salvar</button>
+                <button type="button" class="cancel_modal">Cancelar</button>
             </div>
         </div>
     </main>

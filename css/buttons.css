@@ -1,4 +1,4 @@
-button {
+button{
     background-color: #FFC107;
     border-color: #000000;
     color: black;
@@ -16,14 +16,14 @@ button:hover{
     box-shadow: 0 4px 12px rgb(0, 0, 0, 0.3);
 }
 
-.general {
+.general{
     display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
 }
 
-.functions {
+.functions{
     width: 50rem;
     height: auto;
     background-color: #4A90E2;
@@ -33,7 +33,7 @@ button:hover{
     color: white;
 }
 
-.register {
+.register{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,4 +83,90 @@ button:hover{
     width: 100%;
     border-radius: 10px;
     color: black;
+}
+
+/* Modo responsivo */
+@media (max-width: 1200px) {
+    .functions {
+        width: 40rem;
+    }
+
+    .list {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .functions .rg, .functions .list {
+        width: 48%; /* Garantir que os elementos fiquem lado a lado até que não caibam mais */
+    }
+}
+
+@media (max-width: 992px) {
+    .functions {
+        width: 35rem;
+    }
+
+    .list {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .functions .rg, .functions .list {
+        width: 48%; /* Garantir que os elementos fiquem lado a lado até que não caibam mais */
+    }
+
+    .rg {
+        flex-direction: row; /* Se necessário, volta ao formato horizontal */
+    }
+
+    .rg_button, .rg_button_cd, .list_button {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .functions {
+        width: 90%;
+    }
+
+    .list {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .functions .rg, .functions .list {
+        width: 100%; /* Alinha os itens em uma única coluna */
+    }
+
+    .rg {
+        flex-direction: column;
+    }
+
+    .rg_button, .rg_button_cd, .list_button {
+        width: 100%;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .functions {
+        width: 100%;
+    }
+
+    .register {
+        margin: 0.5rem;
+    }
+
+    .rg, .list {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .functions .rg, .functions .list {
+        width: 100%; /* Garante que os itens ocupem toda a largura disponível */
+    }
+
+    .rg_button, .rg_button_cd, .list_button {
+        padding: 0.6rem;
+    }
 }

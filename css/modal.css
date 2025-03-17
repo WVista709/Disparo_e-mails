@@ -1,0 +1,132 @@
+input{
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    color: black;
+    padding: 10px;
+    margin: 1px;
+    border-radius: 10px;
+    text-align: left;
+    cursor: text;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    font-weight: bold;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+}
+
+input:hover{
+    border-color: #FFA000;
+    transform: scale(1.05);
+}
+
+.form_register{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 32rem;
+    max-width: 90%;
+    padding: 30px;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    animation: modalAppear 0.4s ease-out;
+}
+
+h2{
+    position: absolute;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    margin: auto;
+    top: 0px;
+    background-color: #FFC107;
+    width: 96.65%;
+}
+
+.close_modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.save_modal{
+    position: absolute;
+    bottom: 10px;
+    right: 105px;
+    background: rgb(119, 206, 102);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.cancel_modal{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgb(67, 125, 173);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Modo responsivo */
+@media (max-width: 768px) {
+    .modal {
+        width: 80%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    input {
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 480px){
+    .modal{
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    input{
+        font-size: 0.8rem;
+    }
+}
